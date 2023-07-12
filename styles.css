@@ -1,0 +1,661 @@
+/* For desktop: */
+
+/* Roboto (regular) font */
+@font-face {
+    font-family: 'Roboto';
+    src: url('roboto-regular-webfont.woff2') format('woff2'),
+         url('roboto-regular-webfont.woff') format('woff'),
+         url('roboto-regular-webfont.ttf') format('truetype'),
+         url('roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* General styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 3px 0px 7px rgba(0, 0, 0, 1);
+}
+
+h2 {
+    color: #fff;
+}
+
+#contact h1 {
+    position: absolute;
+    top: 120px;
+}
+
+/* makes the h1 on about and game page follow the normal flow */
+.title-h1 {
+    position: static;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.full-page {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    /* Center the text boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* clear/transparent white background box */
+.background-box {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+/* End General styling */
+
+/* Navigation Menu */
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #3586ff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+
+nav .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.logo img {
+    height: 20px;
+    width: auto;
+}
+
+.logo a {
+    color: #fff;
+}
+
+nav ul{
+  display: flex; /* makes the name display side by side, not under each other */
+  flex-wrap: wrap;
+  list-style: none; /* removes bullet-point */
+}
+nav ul li{
+  margin: 0 5px; /* makes space between the words in the nav */
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px; /* more spacing between the words in nav */
+  border-radius: 5px; /* makes the corners rounder */
+  letter-spacing: 1px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+  color: #000;
+  background: #fff;
+}
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  display: none; /* makes the button disappear in desktop */
+}
+
+input[type=checkbox]{
+  display: none; /* makes the checkbox disappear */
+}
+/* End Navigation Menu */
+
+/* Back to Top button */
+.topbutton {
+    position: sticky;
+    bottom: 40px;
+    margin-left: 85%;
+    margin-top: 100vh;
+    z-index: 99999;
+    
+    /* visual styling */
+    padding: 10px;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+}
+/* End Back to Top button */
+
+/* Footer */
+footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ntnu-logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+footer address {
+    margin: 3px 0;
+}
+
+iframe {
+    height: auto;
+    width: 35%;
+    margin-top: 5px;
+}
+
+footer address a,
+footer p a {
+    color: #fff;
+    opacity: 0.75;
+}
+footer a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Waves Footer */
+footer #wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(img/wave.png);
+    background-size: 1000px 100px;
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+}
+/* End Footer */
+
+/* Index */
+#toptitle h1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 110px;
+    font-size: 4em;
+}
+
+#toptitle h2 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 3px 0px 7px rgba(0, 0, 0, 1);
+}
+
+#toptitle {
+    background-image: url(img/boy-looking-at-whale.webp);
+    background-attachment: scroll;
+}
+
+#article0 {
+    background-image: url(img/looking-at-a-greener-world.webp);
+    background-attachment: fixed;
+}
+
+#article1 {
+    background-image: url(img/looking-at-the-sea.webp);
+    background-attachment: fixed;
+}
+
+#article2 {
+    background-image: url(img/turtle.webp);
+    background-attachment: fixed;
+}
+
+#article3 {
+    background-image: url(img/plastic-waste.webp);
+    background-attachment: fixed;
+}
+
+#article4 {
+    background-image: url(img/whale-trapped-in-bottle.webp);
+    background-attachment: fixed;
+}
+
+#article5 {
+    background-image: url(img/diver.webp);
+    background-attachment: fixed;
+}
+
+
+/* Text boxes */
+.text h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.text p {
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.text {
+    text-align: justify;
+    padding: 40px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.text:hover { 
+    transform: scale(1.1); /* Makes the textbox pop/grow when hovering over*/
+}
+
+/* a links */
+#game a {
+    color: #fff;
+}
+
+.text a,
+#bingo-players a,
+#bingo-need a,
+#mobile-bingo a {
+    color: #000;
+    opacity: .6;
+}
+
+.text a:hover,
+#bingo-players a:hover,
+#bingo-need a:hover,
+#mobile-bingo a:hover {
+    opacity: 1;
+}
+/* End Index */
+
+/* Game Page*/
+#game {
+    background-image: url(img/girl-and-whale.webp);
+}
+
+#game a {
+    text-align: center;
+}
+
+/* spacing between the boxes and text */
+#bingo-need {
+    margin-bottom: 15px;
+}
+
+#bingo-how {
+    margin-bottom: 15px;
+}
+
+#bingo-players {
+    margin-bottom: 30px;
+}
+
+table, th, td {
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#bingo-game {
+    text-align: center;
+    padding: 30px 70px 120px 70px;
+    width: 80%;
+    margin: 20px auto 0 auto;
+}
+
+#bingo-game h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#bingo-rules h3 p {
+    text-align: justify;
+}
+
+#bingo-need button {
+    background-color: #00558A;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+#bingo-need button:hover {
+    background-color: #3586ff;
+}
+
+.bingo-container {
+    display: grid;
+    grid-template:
+        '1 2 3 4 5'
+        '6 7 8 9 10'
+        '11 12 13 14 15'
+        '16 17 18 19 20'
+        '21 22 23 24 25';
+    grid-gap: 10px;
+    background-color: #3586ff;
+    padding: 10px;
+}
+                    
+.bingo-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+}
+/* End Game Page */
+
+/* Mobile Game Page */
+#mobile-bingo-game {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 120px;
+    font-size: 12px;
+}
+
+/* Back button */
+#back-button {
+    background-color: #3586ff;
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin: 0 0 10px 10px;
+    width: 70px;
+}
+
+#back-button:hover {
+    background-color: #00558A;
+}
+/* End Back button */
+
+/* makes the text and link for the mobil-game.html page not show on desktop */
+#mobile-bingo {
+    display: none;
+}
+/* Mobile Game Page */
+
+/* About Page */
+#about {
+    background-image: url(img/fishes.png);
+    background-size: cover;
+}
+
+#about .text {
+    width: 70%;
+    margin: 25px auto 0 auto;
+    padding-bottom: 90px;
+}
+
+#about .text:hover { 
+    transform: none; /* Removes the textbox pop/grow when hovering over*/
+}
+
+#about .text h2 {
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#about .text p{
+    margin-bottom: 15px;
+}
+
+/* End About Page */
+
+/* Contact Page */
+#contact {
+    background-image: url(img/clownfish.webp);
+    height: 120vh;
+}
+
+/* adding transparent background box */
+form {
+    width: 50%;
+    height: auto;
+    padding: 40px;
+}
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #00558A;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+  
+input[type=submit]:hover {
+    background-color: #3586ff;
+}
+/* End Contact */
+
+/* For smaller screens and mobile phones: */
+@media screen and (max-width: 1000px){  
+    nav{
+      padding: 0 40px 0 50px;
+    }
+
+    form {
+        width: 700px;
+    }
+  }
+  
+@media screen and (max-width: 900px) {
+    #toptitle h1 {
+        font-size: 4em;
+    }
+
+    .topbutton {
+        display: none;
+    }
+
+    /* Navigation Menu */  
+    nav .menu-btn i{
+      display: block;
+    }
+    
+    nav ul{
+      position: fixed;
+      top: 80px; /* same height as nav */
+      left: -100%; /* makes the nav disappear by going of screen */
+      background: #00558A;
+      height: 100vh; /* takes up the space of the screen */
+      width: 100%;
+      text-align: center; /* centers it in the middle horizontally */
+      display: block; /* makes the nav links go under each other, not side by side */
+      transition: all 0.3s ease;
+      z-index: 99999;
+    }
+  
+    #click:checked ~ ul{
+      left: 0; /* makes the list with nav come back */
+    }
+  
+    /* does the same as nav ul, but with nav ul li and a */
+    nav ul li{
+      width: 100%;
+      margin: 40px 0;
+    }
+    nav ul li a{
+      width: 100%;
+      margin-left: -100%; /* makes it go off screen */
+      display: block;
+      font-size: 20px;
+    }
+  
+    #click:checked ~ ul li a{
+      margin-left: 0px;
+    }
+  
+    nav ul li a.active,
+    nav ul li a:hover{
+      background: none;
+      color: #fff;
+      text-decoration: underline;
+    }
+    /* End Navigation Menu */
+
+    form {
+        width: 600px;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    #toptitle h1 {
+        font-size: 3em;
+    }
+
+    form {
+        width: 500px;
+    }
+
+    #table-bingo {
+        display: none;
+    }
+
+     /* makes the text and link for the mobil-game.html page show on smaller screens */
+     #mobile-bingo {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #toptitle h1 {
+        font-size: 2em;
+    }
+
+    /* Text Boxes */
+    .text h3 {
+        font-size: small;
+    }
+    
+    .text p {
+        font-size: x-small;
+    }
+
+    .text {
+        padding: 30px;
+        width: 75%;
+    }
+    /* End Text Boxes */
+
+    .topbutton {
+        bottom: 15px;
+        margin-left: 65%;
+        margin-top: 100vh;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    /* making the right and left padding smaller, so the text can take more screen place */
+    #bingo-game {
+        padding: 30px 30px 120px 30px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #toptitle h1 {
+        font-size: 1.8em;
+    }
+
+    form {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #toptitle h1 {
+        font-size: 1.8em;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .logo img {
+        height: 15px;
+        width: auto;
+    }
+    form {
+        width: 300px;
+    }
+
+    #mobile-bingo-game {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    nav {
+        padding: 0 20px 0 20px;
+    }
+    #toptitle h1 {
+        font-size: 1.5em;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .logo img {
+        height: 14px;
+        width: auto;
+    }
+    form {
+        width: 280px;
+    }
+
+    #mobile-bingo-game {
+        font-size: 6px;
+    }
+}

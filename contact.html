@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description of your web page -->
+    <meta name="description" content="Contact and feedback page">
+    <!-- Keywords for search engines -->
+    <meta name="keywords" content="contact, questions, idea, feedback, experience">
+    <!-- For icons (font awesome kit) -->
+    <script src="https://kit.fontawesome.com/09d5e19172.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="top">
+        <nav>
+            <div class="logo">
+                <a href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank">
+                    <img src="img/goal14-logo.png" alt="goal 14, fish logo">
+                    Life below water
+                </a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <div class="full-page" id="contact">
+            <h1>Contact us</h1>
+            <form class="background-box" action="action_page.php" method="post">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address..">
+        
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                    <option value="">Choose one option</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="question">Question</option>
+                    <option value="share-experience">Share experience</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+          
+    </main>
+    <!-- End Main -->
+
+    <!-- Back to Top button -->
+    <a href="#top" class="topbutton">Back to Top &#8593;</a>
+    <!-- End Back to Top button -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Wave -->
+        <div id="wave"></div>
+        <!-- End Wave -->
+        
+        <!-- NTNU logo -->
+        <a href="https://www.ntnu.no/">
+            <img src="img/ntnu-logo-white.png" alt="ntnu logo" id="ntnu-logo">
+        </a>
+        <!-- End NTNU logo -->
+
+        <!-- Address and Phone number -->
+        <address>
+            <a href="https://www.google.com/maps/place/NTNU+Institutt+for+design,+Gj%C3%B8vik/@60.78943,10.6732755,17.99z/data=!4m12!1m6!3m5!1s0x4641da12516fb18f:0x4ad7fd7c9433d49a!2sMustad+N%C3%A6ringspark!8m2!3d60.789756!4d10.6722881!3m4!1s0x4641db7a7c610437:0x5783e79eaec830ba!8m2!3d60.7897412!4d10.6750105" target="_blank">Raufossvegen 40, 2821 Gjøvik</a>
+        </address>
+
+        <address>
+            <a href="tel:+4761135400">+47 61 13 54 00</a>
+        </address>
+        <!-- End Address and Phone number -->
+
+        <!-- Embedded map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1947.0886858471697!2d10.673119616131762!3d60.78984458219353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da1399ad4dfd%3A0x9267f4261988ae38!2sRaufossvegen%2040%2C%202821%20Gj%C3%B8vik!5e0!3m2!1sno!2sno!4v1668352769661!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- End Embedded map -->
+
+        <p>This page was created as part of the subject <a href="https://www.ntnu.no/studier/emner/IDG1292#tab=omEmnet">IDG1292</a> of the department of design by Hannah Sofie Eriksen, student from <a href="https://www.ntnu.no/studier/bwu">BWU</a></p>
+    </footer>
+    <!-- End Footer -->
+    
+</body>
+</html>

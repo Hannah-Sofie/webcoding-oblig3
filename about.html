@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description of your web page -->
+    <meta name="description" content="About page of how the website was made and structured">
+    <!-- Keywords for search engines -->
+    <meta name="keywords" content="about, reflection, structure">
+    <!-- For icons (font awesome kit) -->
+    <script src="https://kit.fontawesome.com/09d5e19172.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+</head>
+<body>
+    <!-- Header -->
+    <header id="top">
+        <nav>
+            <div class="logo">
+                <a href="https://www.globalgoals.org/goals/14-life-below-water/" target="_blank">
+                    <img src="img/goal14-logo.png" alt="goal 14, fish logo">
+                    Life below water
+                </a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <div id="about">
+            <h1 class="title-h1">About</h1>
+            <div class="text">
+                <h2>Reflections</h2>
+                <p>The preparations I did before structuring my html page was first to go through the sustainable development goals and pick one I thought was interesting and wanted to promote. I ended up picking goal 14, life below water, which was about conserving and sustainably use of the world's ocean, seas and marine resources.</p>
+                <p>After selecting goal 14, I chose target group #2, which was lower secondary education, age 14-16 (years 8-10).</p>
+                <p>When structuring and designing my page I used a number of images as a background, because I think that young people like things that are visual, colorful and fun. Images are not the most sustainable on web, but I used images in webp format, which significantly reduces the size of the image file compared to a jpeg file. So even if it is more sustainable not to use images, you cannot avoid using images on your website either. But if you are going to use images, you can at least try to make it more sustainable and reduce the size, as you don't always need a picture in 4K.</p>
+                <p>The color theme on my website is blue, as goal 14 is about the sea, and the color blue is often associated with the sea. I have therefore also made my footer so that it looks like a wave.</p>
+                <p>I tried to keep my site quite simple and intuitive considering that there are 14-16 year olds who will read and click through it. So to keep it clean and simple, there is a text box on each image page when scrolling. This is so that the children are not overwhelmed by too much text and information. It is best to keep it short and concise.</p>
+                <p>When it comes to choosing a font, I chose the same font that the UN Sustainable Development Goal page has on its website, roboto. It is a simple and clear font that is easy to read. All information, facts and texts in the text boxes are also taken from the UN Sustainable Development <a href="https://www.un.org/sustainabledevelopment/oceans/">website</a>.</p>
+                <p>The game I have created is a simple and fun bingo game that can suit most people. Both children and adults, so the children can both play with friends and family. Of course, if you have smaller children, an adult can help if, for example, they want to repair old clothes with holes in them. Or the children can join in the cooking if they are going to make a meat-free meal. So the tasks on the bingo table can be adapted to age, so that everyone in the family can join.</p>
+                <p>I have tried throughout my page to keep the same theme, with an exciting background and information/text box above. The only thing is my bingo print page, which is quite plain. This so that it will be easy to print the bingo table.</p>
+                <p>On the mobile version, I have used an icon for the menu button from <a href="https://fontawesome.com/">fontawesome</a>, which "collects and hides" all the nav links. This makes it easier for the mobile user as there is not a lot of text in the navigation menu that is squeezed together.</p>
+                <p>The bingo-table-game was first created with &lt;table&gt;, but because it is hard to make responsive, I made it to a grid. But it was still overflowing on smaller screens, so to solve this I had to remove the bingo table on the game page when the screen size came below 800px and put in on another page, so it could fit the whole screen without overflowing.</p>
+                <p>On the contact page, I have created a form where the person on the page can write and send us an email. They can choose what the message is about in the subject. It could be if they have questions, want to give feedback, have an idea or just want to share an experience, or something else.</p>
+                <p>In my code I have tried to keep it clean and structured. I have commented on the code, both to tell what the code does and to keep order in where the various codes belong together. The codes are validated and I have tried to make my page accessible. Among other things, I have put slightly transparent boxes behind the text so that it will be easier to read on such a colorful background. You can also hover over/press (on mobile) the text boxes to make them slightly larger and easier to read. I have not only done this to make it easier to read, but it is also a extra fun interaction the children can do with the boxes to keep their focus more on the page and the information in the text boxes.</p>
+                <p>When trying to WCAG validate my code, I get some problems with the &lt;input type="checkbox" id="click"&gt; and &lt;i class="fas fa-bars"&gt;. I think this is because it misunderstands that it is supposed to be a button.</p>
+                <p>When CSS validating my code, I got "line 116 nav ul li a:hover and nav ul li a:hover, same color for background-color and color", which is pointed out for me as a warning, but this is just when you hover over the navigation links in the navigation menu, it switches colors. But there are no problem reading what it says, as i also switched the color from white to black, so it is readable on the white hovering background.</p>
+                <p>I have also tried to code efficiently, meaning I have created classes where I have been able to, and used the same code on them, so that I do not repeat myself with the same code on several of the &lt;div&gt;.</p>
+                <p>The site is responsive, and it has, at least, 2 different layout configurations: one for small screens (mobile phones, 600px) and another one for regular screens (laptops and desktop screens). When creating my site I first started with the desktop, even though I know it's good practice to start with the mobile one. But I couldn't figure out how to go from menu button to navigation menu with all the links aligned. It was easier to design the navigation menu, and then hide it in mobile. So that's why I designed the desktop before the mobile, but I know I should have started with the mobile.</p>
+            </div>
+        </div>
+    </main>
+    <!-- End Main -->
+
+    <!-- Back to Top button -->
+    <a href="#top" class="topbutton">Back to Top &#8593;</a>
+    <!-- End Back to Top button -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Wave -->
+        <div id="wave"></div>
+        <!-- End Wave -->
+        
+        <!-- NTNU logo -->
+        <a href="https://www.ntnu.no/">
+            <img src="img/ntnu-logo-white.png" alt="ntnu logo" id="ntnu-logo">
+        </a>
+        <!-- End NTNU logo -->
+
+        <!-- Address and Phone number -->
+        <address>
+            <a href="https://www.google.com/maps/place/NTNU+Institutt+for+design,+Gj%C3%B8vik/@60.78943,10.6732755,17.99z/data=!4m12!1m6!3m5!1s0x4641da12516fb18f:0x4ad7fd7c9433d49a!2sMustad+N%C3%A6ringspark!8m2!3d60.789756!4d10.6722881!3m4!1s0x4641db7a7c610437:0x5783e79eaec830ba!8m2!3d60.7897412!4d10.6750105" target="_blank">Raufossvegen 40, 2821 Gjøvik</a>
+        </address>
+
+        <address>
+            <a href="tel:+4761135400">+47 61 13 54 00</a>
+        </address>
+        <!-- End Address and Phone number -->
+
+        <!-- Embedded map -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1947.0886858471697!2d10.673119616131762!3d60.78984458219353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641da1399ad4dfd%3A0x9267f4261988ae38!2sRaufossvegen%2040%2C%202821%20Gj%C3%B8vik!5e0!3m2!1sno!2sno!4v1668352769661!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- End Embedded map -->
+
+        <p>This page was created as part of the subject <a href="https://www.ntnu.no/studier/emner/IDG1292#tab=omEmnet">IDG1292</a> of the department of design by Hannah Sofie Eriksen, student from <a href="https://www.ntnu.no/studier/bwu">BWU</a></p>
+    </footer>
+    <!-- End Footer -->
+    
+</body>
+</html>
